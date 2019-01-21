@@ -4,8 +4,8 @@ sys.path.append(os.getcwd())
 from src.live_orders import LiveOrders
 from src.order import Order
 
-class TestLiveOrders(unittest.TestCase):
 
+class TestLiveOrders(unittest.TestCase):
     def test_add(self):
         LiveOrders.add("a123", 5, 10, LiveOrders.BUY)
 
@@ -48,8 +48,5 @@ class TestLiveOrders(unittest.TestCase):
         assert result[3].price_per_kilo == 6
 
 
-
-
-
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()
